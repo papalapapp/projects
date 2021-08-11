@@ -7,7 +7,7 @@
 h1 {
 	color: #426696;
 	font-weight: 600;
-	font-size: 3rem;
+	font-size: 2em;
 	opacity: 0.8;
 }
 
@@ -15,6 +15,7 @@ h2, p {
 	color: #658ec6;
 	font-weight: 500;
 	opacity: 0.8;
+	font-size: 1em;
 }
 
 h3 {
@@ -34,8 +35,8 @@ main {
 
 .glass {
 	background: white;
-	min-height: 80vh;
-	width: 60%;
+	height: 100%;
+	width: 90%; /*60%*/
 	background: linear-gradient(
 		to right bottom, 
 		rgba(255, 255, 255, 0.7),
@@ -70,6 +71,8 @@ main {
 	left: 12%;
 }
 
+/* Dashoard */
+
 .dashboard {
 	flex: 1;
 	display: flex;
@@ -87,13 +90,13 @@ main {
 
 .link {
 	display: flex;
-	margin: 2rem 0rem;
+	margin: 1rem 0rem;
 	padding: 1rem 5rem;
 	align-items: center;
 }
 
 .link h2 {
-	padding: 0rem 2rem;
+	padding: 0rem 1rem;
 }
 
 
@@ -119,6 +122,97 @@ main {
 }
 
 
+/* Games */
+
 .games {
 	flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 3.5rem;
 }
+
+.status {
+	margin-bottom: 2rem;
+}
+
+.status input {
+	background: linear-gradient(
+		to right bottom, 
+		rgba(255, 255, 255, 0.7),
+		rgba(255, 255, 255, 0.3)
+	);
+	width: 44%;
+	border: none;
+	border-radius: 2rem;
+	padding: 0.1rem;
+}
+
+.card {
+	display: flex;
+	background: linear-gradient(to left top,
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.4)
+	);
+	border-radius: 1.5rem;
+	margin: 2rem 0rem;
+	padding: 2rem;
+	box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+	justify-content: space-between;
+}
+
+.progress {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 100%;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 60%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.percentage {
+  font-weight: bold;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.user img {
+	max-height: 80px;
+	max-width: 80px;
+}
+
+.link img {
+	max-width: 32px;
+	max-height: 32px;
+}
+
+.pro img {
+	max-height: 119px;
+	max-width: 107px;
+}
+
+.card img {
+	max-width: 84px;
+	max-height: 84px;
+}
+
+a:hover {
+	background: white;
+}
+
