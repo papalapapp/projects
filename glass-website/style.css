@@ -26,7 +26,7 @@ h3 {
 
 main {
 	font-family: "Poppins", sans-serif;
-	min-height: 100vh;
+	height: 100vh;
 	background: linear-gradient(to right top, #65dfc9, #6cdbeb);
 	display: flex;
 	align-items: center;
@@ -35,8 +35,8 @@ main {
 
 .glass {
 	background: white;
-	height: 100%;
-	width: 90%; /*60%*/
+	height: 75vh;
+	width: 60%; /*60%*/
 	background: linear-gradient(
 		to right bottom, 
 		rgba(255, 255, 255, 0.7),
@@ -45,7 +45,7 @@ main {
 	border-radius: 2rem;
 	z-index: 3;
 	backdrop-filter: blur(2rem);
-	display: flex;
+
 }
 
 .circle1, .circle2 {
@@ -74,29 +74,46 @@ main {
 /* Dashoard */
 
 .dashboard {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	text-align: center;
 	background: linear-gradient(
 		to right bottom, 
 		rgba(255, 255, 255, 0.7),
 		rgba(255, 255, 255, 0.3)
 	);
+	width: 25%;
+	height: 100%;
 	border-radius: 2rem;
+	float: left;
+}
+
+.user {
+	width: 100%;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.links {
+	width: 70%;
+	margin-top: 1rem;
+	margin: auto;
 }
 
 .link {
-	display: flex;
-	margin: 1rem 0rem;
-	padding: 1rem 5rem;
-	align-items: center;
+	list-style-type: none;
+	padding: 1rem 1rem;
 }
 
-.link h2 {
-	padding: 0rem 1rem;
+.link img {
+	vertical-align: middle;
+	padding-right: 0.5rem;
+}
+
+.link a {
+	text-decoration: none;
+	color: #658ec6;
+	font-weight: 500;
+	opacity: 0.8;
+	font-size: 1em;
+	width: 50%;
 }
 
 
@@ -125,11 +142,8 @@ main {
 /* Games */
 
 .games {
-	flex: 2;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
 	margin: 3.5rem;
+	float: left;
 }
 
 .status {
@@ -149,7 +163,6 @@ main {
 }
 
 .card {
-	display: flex;
 	background: linear-gradient(to left top,
 		rgba(255, 255, 255, 0.8),
 		rgba(255, 255, 255, 0.4)
@@ -158,7 +171,6 @@ main {
 	margin: 2rem 0rem;
 	padding: 2rem;
 	box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
-	justify-content: space-between;
 }
 
 .progress {
@@ -180,9 +192,6 @@ main {
 }
 
 .card-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .percentage {
