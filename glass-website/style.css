@@ -35,7 +35,7 @@ main {
 
 .glass {
 	background: white;
-	height: 75vh;
+	height: 80vh;
 	width: 60%; /*60%*/
 	background: linear-gradient(
 		to right bottom, 
@@ -83,13 +83,13 @@ main {
 	border-radius: 2rem;
 	float: left;
 	overflow: scroll;
+	position: relative;
 }
 
 .user {
 	width: 100%;
 	text-align: center;
 	margin-top: 2rem;
-	margin-bottom: 1rem;
 }
 
 .links {
@@ -114,13 +114,12 @@ main {
 	font-weight: 500;
 	opacity: 0.8;
 	font-size: 1em;
-	width: 50%;
 }
 
 
 .pro {
 	margin: auto;
-	margin-top: 1rem;
+	vertical-align: middle;
 	background: linear-gradient(to right top, #65dfc9, #6cdbeb);
 	border-radius: 1.5rem;
 	color: white;
@@ -128,6 +127,9 @@ main {
 	position: relative;
 	width: 80%;
 	font-size: 0.9rem;
+	position: absolute;
+	bottom: 4%;
+	left: 10%;
 }
 
 .pro img {
@@ -152,14 +154,13 @@ main {
 .games {
 	float: left;
 	width: 75%;
-	height: 100%;
-	overflow: scroll;
+	height: 80vh;
 }
 
 .status {
 	margin-top: 1.5rem;
 	margin-left: 1.5rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 .status input {
@@ -176,8 +177,11 @@ main {
 
 
 .cards {
+	height: 77%;
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
+	overflow: scroll;
+	border-radius: 1rem;
 }
 
 .card {
@@ -187,7 +191,7 @@ main {
 	);
 	border-radius: 1.5rem;
 	margin: 2rem 0rem;
-	padding: 2rem;
+	padding: 1.5rem;
 	box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
 	overflow: scroll;
 }
@@ -221,6 +225,7 @@ main {
 }
 
 a:hover {
-	background: white;
+	font-weight: 700;
+	opacity: 1;
 }
 
