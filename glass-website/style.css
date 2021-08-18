@@ -35,8 +35,8 @@ main {
 
 .glass {
 	background: white;
-	height: 80vh;
-	width: 60%; /*60%*/
+	height: 552px;
+	width: 864px; /*60%*/
 	background: linear-gradient(
 		to right bottom, 
 		rgba(255, 255, 255, 0.7),
@@ -90,22 +90,22 @@ main {
 	width: 100%;
 	text-align: center;
 	margin-top: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 .links {
-	width: 70%;
-	margin-top: 1rem;
+	width: 58%;
 	margin: auto;
 }
 
 .link {
 	list-style-type: none;
-	padding: 1rem 1rem;
+	padding: 1.2rem 0rem;
 }
 
 .link img {
 	vertical-align: middle;
-	padding-right: 0.5rem;
+	margin-right: 0.5rem;
 }
 
 .link a {
@@ -115,6 +115,7 @@ main {
 	opacity: 0.8;
 	font-size: 1em;
 }
+
 
 
 .pro {
@@ -154,7 +155,7 @@ main {
 .games {
 	float: left;
 	width: 75%;
-	height: 80vh;
+	height: 100%;
 }
 
 .status {
@@ -199,9 +200,24 @@ main {
 
 
 .card-info {
+	float: left;
+	margin-left: 1rem;
 }
 
+.card-info h2 {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.card img {
+	max-width: 84px;
+	max-height: 84px;
+	float: left;
+}
+
+
 .percentage {
+	float: right;
   font-weight: bold;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   -webkit-background-clip: text;
@@ -214,18 +230,14 @@ main {
 }
 
 .link img {
-	max-width: 32px;
-	max-height: 32px;
+	max-width: 27px;
+	max-height: 27px;
 }
 
-
-.card img {
-	max-width: 84px;
-	max-height: 84px;
-}
 
 a:hover {
-	font-weight: 700;
+	font-weight: 800;
 	opacity: 1;
 }
+
 
