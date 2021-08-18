@@ -82,7 +82,6 @@ main {
 	height: 100%;
 	border-radius: 2rem;
 	float: left;
-	overflow: scroll;
 	position: relative;
 }
 
@@ -194,7 +193,7 @@ main {
 	margin: 2rem 0rem;
 	padding: 1.5rem;
 	box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
-	overflow: scroll;
+	overflow: auto;
 }
 
 
