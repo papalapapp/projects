@@ -3,31 +3,53 @@
 <head>
 	<meta charset="utf-8">
 	<title>Tesla UI</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b008a18e0b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
 	<main>
 		<section class="nav">
 			<div class="navigation-bar">
 				<ul class="navigation-itmes">
-					<li class="apps"><i class="fa fa-car fa-2x"></i></li>
-					<li class="apps"><i class="fa fa-music fa-2x"></i></li>
-					<li class="apps"><i class="fa fa-camera fa-2x"></i></li>
-					<li class="apps" id="special-icon"><img src="images-icons/Icon-Small-40.png"></li>
-					<li class="apps" id="special-icon-2"><i class="fa fa-angle-double-up fa-3x"></i></li>
-					<li class="apps">Chair</li>
-					<li class="apps"><img src="images-icons/fan.png"></li>
-					<li class="apps">Temperatur</li>
-					<li class="apps">Chair</li>
-					<li class="apps">windshiuelwarmer</li>
+					<li class="apps"><i class="fas fa-car fa-2x"></i></li>
+					<li class="apps"><i class="fas fa-music fa-2x"></i></li>
+					<li class="apps"><i class="fas fa-record-vinyl fa-2x"></i></li>
+					<li class="apps"><i class="far fa-sun fa-2x"></i></li>
+					<li class="apps"><i class="fas fa-caret-square-up fa-2x"></i></li>
+					<li class="apps"><i class="fas fa-chair fa-2x"></i></li>
+					<li class="apps"><i class="fas fa-fan fa-2x"></i></li>
+					<li class="apps temperature">21 C°</li>
+					<li class="apps"><i class="fas fa-chair fa-2x"></i></li>
+					<li class="apps"><i class="fas fa-water fa-2x"></i></li>
 					<li class="apps">Volume</li>
-					<li class="apps"><i class="fa fa-volume-up fa-2x"></i></li>
+					<li class="apps"><i class="fas fa-volume-up fa-2x"></i></li>
 
 				</ul>
 			</div>
+		</section>
+
+		<section class="dashboard">
+			<div class="container">
+				<div class="driver-info">
+					<div class="speed">
+						<div>142</div>
+						<div id="kmh">km/h</div>
+					</div>
+				</div>
+				<div class="visulation">
+					
+				</div>
+			</div>
+		</section>
+
+		<section class="main-screen">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20457.58100429694!2d8.66163065!3d50.1387347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1631116369715!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</section>
 	</main>
 
 </body>
 </html>
+

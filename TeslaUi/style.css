@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+main {
+	height: 100vh;
+	font-family: 'Nunito', sans-serif;
+}
+
 .navigation-itmes {
 	text-decoration: none;
 	display: flex;
@@ -23,7 +28,7 @@
 	width: 100%;
 	text-align: center;
 	height: 4rem;
-	background-color: #f0ede4;
+	background-color: white;
 	padding-top: 0px;
 	border-radius: 1rem;
 
@@ -48,8 +53,60 @@
 
 }
 
+.temperature {
+	font-size: 28px;
+	font-style: bold;
+	font-weight: 700;
+	color: #919191;
+}
 
+.dashboard {
+	background-color: white;
+	width: 33.3%;
+	height: 100%;
+	float: left;
+}
 
+i {
+	color: #919191;
+}
+
+.main-screen {
+	float: left;
+	width: 66.7%;
+	height: 93%;
+}
+
+iframe {
+	/*width: 950px;*/
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	width: 93%;
+	height: 93%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 18px;
+}
+
+.speed {
+	font-size: 48px;
+	font-style: bold;
+	font-weight: 500;
+	width: 100px;
+	float: left;
+	posi
+}
+
+#kmh {
+	font-size: 14px;
+	margin-top: 0px;
+	position: relative;
+	bottom: 14px;
+	left: 30px;
+}
 
 
 
