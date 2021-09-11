@@ -10,45 +10,52 @@
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<main>
-		<section class="nav">
-			<div class="navigation-bar">
-				<ul class="navigation-itmes">
-					<li class="apps"><i class="fas fa-car fa-2x"></i></li>
-					<li class="apps"><i class="fas fa-music fa-2x"></i></li>
-					<li class="apps"><i class="fas fa-record-vinyl fa-2x"></i></li>
-					<li class="apps"><i class="far fa-sun fa-2x"></i></li>
-					<li class="apps"><i class="fas fa-caret-square-up fa-2x"></i></li>
-					<li class="apps"><i class="fas fa-chair fa-2x"></i></li>
-					<li class="apps"><i class="fas fa-fan fa-2x"></i></li>
-					<li class="apps temperature">21 C°</li>
-					<li class="apps"><i class="fas fa-chair fa-2x"></i></li>
-					<li class="apps"><i class="fas fa-water fa-2x"></i></li>
-					<li class="apps">Volume</li>
-					<li class="apps"><i class="fas fa-volume-up fa-2x"></i></li>
 
-				</ul>
-			</div>
-		</section>
+	<div class="outside">
+		<main>
+			<section class="nav">
+				<div class="navigation-bar">
+					<ul class="navigation-itmes">
 
-		<section class="dashboard">
-			<div class="container">
-				<div class="driver-info">
-					<div class="speed">
-						<div>142</div>
-						<div id="kmh">km/h</div>
+
+						<li class="apps" id="settings"><img src="images-icons/settings.svg"></li>
+						<li class="apps" id="music"><img src="images-icons/music-2.svg"></li>
+						<li class="apps" id="rear-camera"><img src="images-icons/rear-camera.svg"></i></li>
+						<li class="apps" id="windshield-wipers"><img src="images-icons/windshield-wipers-2.svg"></li>
+						<li class="apps"><img src="images-icons/apps-arrow.svg"></li>
+						<li class="apps" id="chair"><img src="images-icons/heated-chair/chair-icon.svg"></li>
+						<li class="apps" id="fan"><img src="images-icons/fan.svg"></li>
+						<li class="apps temperature">21 C°</li>
+						<li class="apps" id="chair"><img src="images-icons/heated-chair/chair-icon.svg"></li>
+						<li class="apps" id="front-windshield"><img src="images-icons/front-windshield-heater.svg"></li>
+						<li class="apps"><img src="images-icons/rear-windshield-heater.svg"></li>
+						<li class="apps"><img src="images-icons/volume.svg"></li
+					</ul>
+				</div>
+			</section>
+
+			<section class="dashboard">
+				<div class="container">
+					<div class="driver-info">
+						<div class="speed">
+							<div>142</div>
+							<div id="kmh">km/h</div>
+						</div>
+						<img src="images-icons/steering-wheel.svg">
+					</div>
+					
+					<div class="visulation">
+						<hr>
+
 					</div>
 				</div>
-				<div class="visulation">
-					
-				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="main-screen">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20457.58100429694!2d8.66163065!3d50.1387347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1631116369715!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-		</section>
-	</main>
+			<section class="main-screen">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20457.58100429694!2d8.66163065!3d50.1387347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1631116369715!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</section>
+		</main>
+	</div>
 
 </body>
 </html>
