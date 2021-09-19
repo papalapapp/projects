@@ -4,43 +4,23 @@
 	box-sizing: border-box;
 }
 
-.outside {
-	background-color: black;
-}
-
 main {
 	height: 100vh;
-	width: 93%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
 	font-family: 'Nunito', sans-serif;
-	border-radius: 1rem;
+	overflow: hidden;
 }
 
-.navigation-itmes {
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-
-
-}
-
-.nav {
-	width: 93%;
-	position: absolute;
-	bottom: 0px;
-	left: 50px;
-	border-radius: 1rem;
-}
 
 .navigation-bar {
 	width: 100%;
 	text-align: center;
-	height: 4rem;
+	height: 3.8rem;
 	background-color: white;
 	padding-top: 0px;
-	border-radius: 1rem;
-
+	position: absolute;
+	bottom: 0px;
+	overflow: hidden;
 }
 
 .apps {
@@ -54,6 +34,12 @@ main {
 
 }
 
+.apps button {
+	background-color: white;
+	border: none;
+
+}
+
 
 img {
 	width: 60px;
@@ -61,17 +47,12 @@ img {
 }
 
 
-/*#music {
-	height: 30px;
-	width: 30px;
-}
-*/
-
-.temperature {
+#temperature {
+	font-family: 'Nunito', sans-serif;
 	font-size: 28px;
 	font-style: bold;
 	font-weight: 700;
-	color: #919191;
+	color: black;
 }
 
 .dashboard {
@@ -79,12 +60,8 @@ img {
 	width: 34%;
 	height: 100%;
 	float: left;
-	border-radius: 1rem;
 }
-/*
-i {
-	color: #919191;
-}*/
+
 
 .main-screen {
 	float: left;
@@ -96,7 +73,6 @@ iframe {
 	/*width: 950px;*/
 	width: 100%;
 	height: 100%;
-	border-radius: 1rem;
 }
 
 .container {
@@ -125,6 +101,21 @@ iframe {
 
 .visulation {
 	clear: both;
+	background-color: white;
+	width: 100%;
+	height: 85vh;
+}
+
+.cards {
+	width: 92%;
+	height: 10.5rem;
+	background-color: white;
+	position: relative;
+	bottom: 225px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 1.5rem;
+	border: 1px solid black;
 }
 
 
