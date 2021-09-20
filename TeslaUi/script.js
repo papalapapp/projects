@@ -27,7 +27,6 @@ const togglesettings = () => {
 	document.querySelector(".maps")
 		.classList.toggle("hidden")
 
-	if ()
 };
 
 document.querySelector("#settings")
