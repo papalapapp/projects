@@ -13,8 +13,8 @@
 
 <main>
 		
-	<div class="navigation-bar">
-			<div class="apps">
+	<nav class="navigation-bar">
+			<div class="apps" id="settings">
 				<button><img src="images-icons/settings.svg"></button>
 			</div>
 			<div class="apps">
@@ -23,7 +23,7 @@
 			<div class="apps">
 				<button><img src="images-icons/rear-camera.svg"></button>
 			</div>
-			<div class="apps">
+			<div class="apps" id="windshield-wipers">
 				<button><img src="images-icons/windshield-wipers-2.svg"></button>
 			</div>
 			<div class="apps">
@@ -50,7 +50,7 @@
 			<div class="apps">
 				<button><img src="images-icons/volume.svg"></button>
 			</div>
-	</div>
+	</nav>
 
 	<section class="dashboard">
 		<div class="container">
@@ -64,18 +64,31 @@
 
 			<div class="visulation">
 				<hr>
-			</div>
-
-			<div id="cards" class="cards">
+				<div class="avatar avatar-cards">
+					<img src="images-icons/avatar.png">
+				</div>
 				
+				<div id="cards" class="cards hidden">
+				
+				</div>
+
 			</div>
 
+			
 			
 		</div>
 	</section>
 
 	<section class="main-screen">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20457.58100429694!2d8.66163065!3d50.1387347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1631116369715!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			
+			<iframe class="maps hidden" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20457.58100429694!2d8.66163065!3d50.1387347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1631116369715!5m2!1sde!2sde" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			
+
+
+		<div class="main-apps hidden">
+			
+		</div>
+
 	</section>
 </main>
 
