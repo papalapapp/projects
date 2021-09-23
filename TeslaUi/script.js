@@ -18,19 +18,22 @@ const toggleavatar = () => {
 document.querySelector("#windshield-wipers")
 	.addEventListener("click", toggleavatar);
 
-
-
-
 const togglesettings = () => {
 	document.querySelector(".main-apps")
-		.classList.toggle("hidden");
-	document.querySelector(".maps")
-		.classList.toggle("hidden")
+	.classList.toggle("hidden");
+	if (true) {
+		document.querySelector("iframe").style.display = "none"
+	}
 
 };
 
+
+
+
 document.querySelector("#settings")
 	.addEventListener("click", togglesettings);
+
+
 
 
 

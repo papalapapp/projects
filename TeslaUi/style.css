@@ -85,9 +85,9 @@ iframe {
 
 .main-apps {
 	width: 100%;
-	height: 5%;
+	height: 90%;
 	background-color: red;
-	position: relative;
+	position: absolute;
 	
 }
 
