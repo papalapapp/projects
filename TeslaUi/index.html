@@ -6,6 +6,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/b008a18e0b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./style.css">
 </head>
@@ -79,21 +82,115 @@
 		</div>
 	</section>
 
-	<section class="main-screen">
-			
-			<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20457.58100429694!2d8.66163065!3d50.1387347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1631116369715!5m2!1sde!2sde" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-			
-
-
-		<div class="main-apps hidden">
-			
-		</div>
-
+	<section class="map">
+		
 	</section>
+
+	<div class="main-apps hidden">
+
+		<div class="settings-app">
+
+
+			<div class="settings-nav">
+				<div class="settings-container">
+					<button id="close-botton"><img src="images-icons/closingX.svg"></button>
+					<ul>
+						<li>
+							<button class="settings-button">
+								<div class="settings-part"><img src="images-icons/switch.svg"><div class="settings-text">Kurzbefehle</div></div>
+							</button>
+							
+						</li>
+						<li>
+							<button class="settings-button">
+								<div class="settings-part"><img src="images-icons/lights.svg"><div class="settings-text">Licht</div></div>
+							</button>
+							
+						</li>
+						<li>
+							<button class="settings-button">
+								<div class="settings-part">
+									<img src="images-icons/settings.svg"><div class="settings-text">Fahren</div>
+								</div>
+							</button>
+							
+						</li>
+						<li>
+							<button class="settings-button">
+								<div class="settings-part">
+									<img src="images-icons/locks2.svg"><div class="settings-text">Verriegelungen</div>
+								</div>
+							</button>
+							
+						</li>
+						<li>
+							<button class="settings-button">
+								<div class="settings-part">
+									<img src="images-icons/steering-wheel.svg"><div class="settings-text">Autopilot</div>
+								</div>
+							</button>
+							
+						</li>
+						<li>
+							<button class="settings-button">
+								<div class="settings-part">
+									<img src="images-icons/gps.svg"><div class="settings-text">Navigation</div>
+								</div>
+							</button>
+							
+						</li>
+						<li>
+							<button class="settings-button">
+								<div class="settings-part">
+									<img src="images-icons/display.svg"><div class="settings-text">Display</div>
+								</div>
+							</button>
+							
+						</li>
+						<li>
+							<button class="settings-button">
+								<div class="settings-part">
+									<img src="images-icons/safety.svg"><div class="settings-text">Sicherheit</div>
+								</div>
+							</button>
+							
+						</li>
+						<li>
+							<button class="settings-button">
+								<div class="settings-part">
+									<img src="images-icons/service.svg"><div class="settings-text">Service</div>
+								</div>
+							</button>
+							
+						</li>
+						<li>
+							<button class="settings-button">
+								<div class="settings-part">
+									<img src="images-icons/software.svg"><div class="settings-text">Software</div>
+								</div>
+							</button>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="settings-content">
+				<div id="settings-title">
+					<div>Example</div>
+				</div>
+				
+			</div>
+		</div>	
+
+	</div>
+
+
+	
 </main>
 
-
-<script type="text/javascript" src="./script.js"></script>
+<script src="js/ajax-utils.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
 

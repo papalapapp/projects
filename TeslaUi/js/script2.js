@@ -1,18 +1,5 @@
 // Event handling
 
-
-const togglecontent = () => {
-  document.querySelector(".card")
-    .classList.toggle("hidden");
-};
-
-
-document.querySelector("button")
-  .addEventListener("click", togglecontent);
-
-
-
-
 document.addEventListener("DOMContentLoaded",
   function (event) {
     
