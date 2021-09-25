@@ -98,10 +98,12 @@ iframe {
 
 
 .settings-app {
+	width: 65.1%;
+	height: 89.8%;
+	position: absolute;
+	top: 0px;
+	left: 35%;
 	background-color: #fafafa;
-	width: 100%;
-	height: 100%;
-
 }
 
 .settings-nav {
@@ -177,6 +179,81 @@ iframe {
 	font-size: 18px;
 	font-weight: 600;
 	padding: 15px;
+}
+
+
+.camera-app {
+	width: 65.1%;
+	height: 89.8%;
+	position: absolute;
+	top: 0px;
+	left: 35%;
+}
+
+.camera-container {
+	width: 100%;
+	height: 100%;
+	background: white;
+	background: linear-gradient(
+		to right bottom, 
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 0, 0, 0.8)
+	);
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.camera-container .close-botton-camera {
+	background: linear-gradient(
+		to right bottom, 
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0)
+	);
+	border: none;
+	width: 45px;
+	height: 45px;
+	border-radius: 50vh;
+	position: absolute;
+	margin-left: 5px;
+}
+
+.camera-container .close-botton-camera img {
+	width: 40px;
+	height: 37px;
+	margin-top: 3px;
+	padding-top: 2px;
+}
+
+#main-camera {
+	margin-left: -10px;
+	width: 101.3%;
+	height: 370px;
+}
+
+#main-camera img {
+	width: 100%;
+	height: 100%;
+}
+
+#side-cameras {
+	width: 100%;
+	margin-top: 18px;
+}
+
+.side-cameras-image {
+	float: left;
+	width: 50%;
+	padding-left: 0px;
+}
+
+.side-cameras-image img {
+	width: 90%;
+	height: 190px;
+}
+
+#right-camera-image img {
+	margin-left: 38px;
 }
 
 .dashboard {

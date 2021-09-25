@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 $ajaxUtils.sendGetRequest(
   homeHtml,
   function (responseText) {
-    document.querySelector(".camera")
+    document.querySelector(".camera-app")
       .innerHTML = responseText;
   },
   false);
@@ -100,6 +100,8 @@ $ajaxUtils.sendGetRequest(
 global.$dc = dc;
 
 })(window);
+
+
 
 
 
@@ -125,13 +127,23 @@ document.querySelector("#windshield-wipers")
 	.addEventListener("click", toggleavatar);
 
 const togglesettings = () => {
-	document.querySelector(".main-apps")
+	document.querySelector(".settings-app")
 	.classList.toggle("hidden");
 
 };
 
 document.querySelector("#settings")
 	.addEventListener("click", togglesettings);
+
+
+const togglecamera = () => {
+  document.querySelector(".camera-app")
+  .classList.toggle("hidden");
+
+};
+
+document.querySelector("#camera")
+  .addEventListener("click", togglecamera);
 
 
 
