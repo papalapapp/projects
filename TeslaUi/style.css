@@ -321,6 +321,28 @@ iframe {
 	border: 1px solid black;
 }
 
+#wipers-button-placeholder {
+	background-color: white;
+	width: 100%;
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+	border-radius: 1.5rem;
+}
+
+#wipers-on-off-bottun {
+	background-color: white;
+	border: 1.5px solid #0a84ff;
+	height: 53px;
+	width: 88px;
+	border-radius: 2rem;
+}
+
+#wipers-on-off-bottun:active {
+	background-color: #0a84ff;
+}
+
+
 button {
 	cursor: pointer;
 }

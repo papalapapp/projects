@@ -144,6 +144,7 @@ const togglecamera = () => {
 
 document.querySelector("#camera")
   .addEventListener("click", togglecamera);
+  
 
 
 
