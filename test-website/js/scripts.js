@@ -1,7 +1,7 @@
 const navSlide = () => {
 	const burger = document.querySelector('.burger-button');
 	const nav = document.querySelector('.nav-links');
-	const navLinks = document.querySelectorAll('.nav-links li');
+	const navLinks = document.querySelectorAll('#nav-links li');
 
 	burger.addEventListener('click',()=>{
 		nav.classList.toggle('nav-active');
@@ -12,4 +12,21 @@ const navSlide = () => {
 }
 
 navSlide();
+
+
+
+// adabtive nabar
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".navbar");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            header.removeClass('bignavbar').addClass("smallnavbar");
+        } else {
+            header.removeClass("smallnavbar").addClass('bignavbar');
+        }
+    });
+});
 

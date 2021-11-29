@@ -9,49 +9,39 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
-nav {
-	width: 100%;
-	height: 10vh;
+.navbar {
 	background-color: darkred;
-	position: absolute;
-
+	position: fixed;
+	width: 100%;
 }
 
-.container {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}
 
-.logo {
-	float: left;
-	font-size: 20px;
-	letter-spacing: 1px;
-	font-style: bold;
-	margin-top: 8px;
-}
 
-.nav-right-part {
-	float: right;
-}
-
-.nav-links {
-	float: left;
-}
-
-.nav-links li {
-	float: left;
-	list-style: none;
-	padding: 20px;
-}
-
-.nav-links a {
-	text-decoration: none;
+.navbar-brand div {
+	font-size: 25px;
 	color: white;
-	opacity: 0.8;
-	font-size: 16px;
-	font-weight: 400;
 }
+
+.nav-link {
+	color: white;
+}
+
+
+
+.smallnavbar {
+	height: 70px;
+	box-shadow: 0px 1px 25px black;
+	transition: 0.3s ease-in;
+}
+
+.bignavbar {
+	height: 100px;
+	padding-top: 10px;
+	transition: 0.2s ease-in;
+}
+
+
+
 
 
 .burger-button {
@@ -69,26 +59,34 @@ nav {
 	border-radius: 1px;
 }
 
+
+
 @media screen and (max-width: 768px) {
-	body {
+/*	body {
 		overflow-x: hidden;
-	}
-	.nav-links {
-		position: absolute;
+	}*/
+	#nav-links {
+		position: fixed;
 		right: 0px;
-		height: 90vh;
-		top: 10vh;
-		background-color: darkred;
+		height: 0vh;
+		top: 68px;
+		background: linear-gradient(to left bottom, 
+		rgba(25, 126, 255, 1),
+		rgba(25, 126, 255, 1)
+		);
 		display: flex;
 		flex-direction: column;
 		align-items: center;	
 		justify-content: space-evenly;
-		width: 50%;
-		transform: translate(100%);
-		transition: transform 0.5s ease-in;
+		width: 100%;
+		/*transform: translate(100%);*/
+		transition: 0.4s ease-in;
+		overflow: hidden;
+		z-index: 1;
 	}
-	.nav-links li {
+	#nav-links li a {
 		opacity: 0.8;
+		font-size: 18px;
 	}
 	.burger-button {
 		display: block;
@@ -96,30 +94,22 @@ nav {
 }
 
 .nav-active {
-	transform: translate(0%);
+	/*transform: translate(0%);*/
+	/*width: 100%;*/
+	height: 90vh;
 }
 
 .toggle .line1 {
 	transform: rotate(-45deg)translate(-5px,6px);
+	transition: 0.3s ease-in;
 }
 .toggle .line2 {
 	opacity: 0;
+	transition: 0.2s ease-in;
 }
 
 .toggle .line3 {
 	transform:rotate(45deg)translate(-5px,-6px);
+	transition: 0.3s ease-in;
 
 }
-
-.homeimage {
-	width: 100%;
-}
-
-.homeimage img {
-	width: 100%;
-}
-
-
-
-
-
