@@ -15,11 +15,17 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.footer-links-unten li a {
+		font-size: 10px;
+	}
+	.footer-links-unten{
+		display: none;
+	}
 }
 
 nav {
 	background-color: #152461;
-	height: 60px;
+	height: 100px;
 	z-index: 1000;
 }
 
@@ -39,7 +45,7 @@ nav {
 }
 
 .navbar-brand {
-	font-family: 'Playfair Display', serif;;
+	font-family: 'Playfair Display', serif;
 	float: left;
 	/*align-self: center;*/
 	color: white;
@@ -131,6 +137,9 @@ nav {
 	.img-1 {
 		margin-top: 30px;
 	}
+	#footer3element{
+		margin-top: 25px;
+	}
 	
 	
 }
@@ -180,8 +189,44 @@ nav {
 
 
 .home-page-3 {
-	height: 100vh;
+	margin-top: 30vh;
+	height: 50vh;
+}
+
+.footer{
+	background-color: #152461;
+	color: whitesmoke;
+	padding-top: 17px;
 }
 
 
+.footer li{
+	text-decoration: none;
+	list-style-type: none;
+	color: white;
+}
 
+.footer-h3{
+	font-size: 18px;
+	font-family: 'Playfair Display', serif;
+}
+.footer-links-items a{
+	color: whitesmoke;
+	list-style-type: none;
+	text-decoration: none;
+	font-size: 12px;
+
+}
+
+.footer-links-items a:hover{
+	text-decoration: underline;
+}
+.footer-links{
+	padding: 0px;
+}
+
+.footer-links-unten{
+	margin-left: auto;
+	margin-right: auto;
+	width: 679px;
+}
