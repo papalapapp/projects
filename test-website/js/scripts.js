@@ -1,3 +1,4 @@
+// Navbar in mobile
 const navSlide = () => {
 	const burger = document.querySelector('.burger-button');
 	const nav = document.querySelector('.nav-list');
@@ -30,3 +31,8 @@ $(function() {
     });
 });
 
+// Scroll to top button
+function scrolltopFunction () {
+    document.body.scrollTop = 0;  // Safari
+    document.documentElement.scrollTop = 0; // Chrome, FireFox etc.
+};

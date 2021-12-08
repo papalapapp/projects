@@ -21,8 +21,14 @@ body {
 	.footer-links-unten{
 		display: none;
 	}
+	.fas{
+		position: relative;
+		bottom: 25px;
+	}
 }
 
+
+/* Start Nav */
 nav {
 	background-color: #152461;
 	height: 100px;
@@ -36,7 +42,6 @@ nav {
 	box-shadow: 0px 1px 25px black;
 	transition: 0.3s ease-in;
 }
-
 .bignavbar {
 	height: 100px;
 	padding-top: 0px;
@@ -51,28 +56,25 @@ nav {
 	color: white;
 	font-size: 33px;
 }
-
 .nav-list {
 	padding-top: 23px;
 	float: right;
 	text-align: center;
 }
+
 .nav-items {
 	float: left;
 	padding: 0px 15px 0px 15px;
 }
-
 .nav-items a {
 	text-decoration: none;
 	color: white;
 	font-size: 18px;
 	font-weight: 250;
 }
-
 .nav-items a:hover {
 	text-decoration: underline;
 }
-
 .nav-items {
 	list-style-type: none;
 }
@@ -83,7 +85,6 @@ nav {
 	margin-top: 12px;
 	cursor: pointer;
 }
-
 .burger-button div {
 	width: 25px;
 	height: 3px;
@@ -93,6 +94,12 @@ nav {
 	border-radius: 1px;
 }
 
+.hr-nav{
+	border: none;
+	border-top: 1px solid white;
+}
+
+/* End Nav */
 
 @media screen and (max-width: 992px) {
 
@@ -122,18 +129,14 @@ nav {
 	.text-home-page-2, .h2-home-page-2 {
 		text-align: center;
 	}
-
-
 	#M_e_button {
 		width: 100%;
 	}
-
 	.button-home-page-2 {
 		margin-right: auto;
 		margin-left: auto;
 		width: 75%;
 	}
-
 	.img-1 {
 		margin-top: 30px;
 	}
@@ -144,11 +147,12 @@ nav {
 	
 }
 
+/* Nav mobile */
 .nav-active {
 	/*transform: translate(0%);*/
 	/*width: 100%;*/
 	display: grid;
-	height: 100vh;
+	height: 60vh;
 	opacity: 1;
 }
 
@@ -167,6 +171,8 @@ nav {
 
 }
 
+/* Start Main Page */
+
 .home-page-1 {
 	height: 100vh;
 }
@@ -182,18 +188,23 @@ nav {
 	border-radius: 20px;
 	color: #152461;
 }
-
 #M_e_button:hover {
 	background-color: #152461;
 	color: white;
 }
 
 
-.home-page-3 {
-	margin-top: 30vh;
-	height: 50vh;
+.home-page-3{
+	margin-top: 40vh;
+	height: 90vh;
 }
 
+.home-page-3-header{
+	margin-bottom: 30px;
+}
+
+
+/* Start footer */
 .footer{
 	background-color: #152461;
 	color: whitesmoke;
@@ -231,3 +242,32 @@ nav {
 	margin-right: auto;
 	width: 679px;
 }
+
+/* Scroll to top btn */
+#Btn-scroll-top{
+	border: none;
+	background-color: #152461;
+}
+.fas{
+	font-size: 33px;
+	color: white;
+	opacity: 0.9;
+	animation: bounce-btn 0.5s ease-in forwards infinite alternate;
+}
+.fas:hover{
+	opacity: 0.3;
+}
+@keyframes bounce-btn {
+	from {
+		transform: translateY(0);
+	}
+	
+	to {
+		transform: translateY(-5px);
+	}
+}
+/* End Scroll to top btn */
+
+/* End footer */
+
+
